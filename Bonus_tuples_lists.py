@@ -9,6 +9,16 @@ movies:list = [
     ("The Room", 2003, [1, 2, 3, 4, 5, 1])
 ]
 
+
+#simplest solution
+'''
+counter = 1
+for index,(titles,year,ratings) in enumerate movies:
+    average = round(sum(ratings)/len(ratings), 2)
+    if average >= 6.0:
+        print(f"{index}. {titles} ({year}) - Average rating: {average} ★")
+'''
+
 # Unpack the list
 first_movie, second_movie, third_movie, forth_movie, fifht_movie, sixth_movie = movies
 
